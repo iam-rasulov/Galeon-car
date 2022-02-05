@@ -1,0 +1,139 @@
+.rent{
+    background-image: url(../images/border.png);
+    background-position: calc(50% + 100px) calc(50% - 120px);
+    background-repeat: no-repeat;
+    padding-top: 20px;
+}
+
+.rent-inner{
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.rent-inner__title{
+    margin-top: 140px;
+    margin-bottom: 8px;
+    font-family: $main-font-family;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 29px;
+    vertical-align: top;
+    color: white;
+}
+
+.rnet-inner__span{
+    padding-bottom: 500px;
+    font-family: $main-font-family;
+    font-weight: 900;
+    font-style: heavy;
+    font-size: 48px;
+    line-height: 100%;
+    vertical-align: top;
+    letter-spacing: 10%;
+    color: #EDC5A2;
+}
+
+.rent-inner__img{
+    width: 660px;
+    height: 378.2px;
+}
+
+.rent-inner_img-box{
+    width: 1990px;
+    position: absolute;
+    z-index: 1;
+    top: 140px;
+    left: -275px;
+}
+
+.rent-inner__img-box__span{
+    width: 222px;
+    height: 48px;
+    position: absolute;
+    top: 300px;
+    left: 220px;
+    z-index: 2;
+    padding: 14px 32px;
+    font-family: $main-font-family;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    border: 3px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.4s ease;
+
+    &:hover{
+        color: $main-title-color;
+        border: 3px solid $main-title-color;
+        opacity: 0.8;
+    }
+
+    &:active{
+        color: white;
+        border: 3px solid white;
+        opacity: 0.8;
+    }
+}
+
+.rent-inner__img-box__span1{
+    width: 255px;
+    height: 48px;
+    position: absolute;
+    top: 300px;
+    left: 880px;
+    z-index: 2;
+    padding: 14px 32px;
+    font-family: $main-font-family;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    border: 3px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.4s ease;
+
+    &:hover{
+        color: $main-title-color;
+        border: 3px solid $main-title-color;
+        opacity: 0.8;
+    }
+
+    &:active{
+        color: white;
+        border: 3px solid white;
+        opacity: 0.8;
+    }
+}
+
+.rent-inner__img-box__span2{
+    width: 222px;
+    height: 48px;
+    position: absolute;
+    top: 300px;
+    left: 1540px;
+    z-index: 2;
+    padding: 14px 32px;
+    font-family: $main-font-family;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    border: 3px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.4s ease;
+
+    &:hover{
+        color: $main-title-color;
+        border: 3px solid $main-title-color;
+        opacity: 0.8;
+    }
+
+    &:active{
+        color: white;
+        border: 3px solid white;
+        opacity: 0.8;
+    }
+}

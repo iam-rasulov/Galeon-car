@@ -1,0 +1,1176 @@
+@font-face {
+  font-family: 'CeraPro';
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/CeraPro-Regular.woff2") format("woff2"), url("../fonts/CeraProRegular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/Gilroy-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-style: bold;
+  font-weight: 700;
+  src: local(""), url("../fonts/Gilroy-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 900;
+  src: local(""), url("../fonts/Gilroy-Heavy.woff2") format("woff2");
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+html {
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Gilroy";
+  margin: 0;
+  padding: 0;
+  background-color: #15171E;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+p {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1540px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.header-top {
+  width: 961px;
+  margin-left: auto;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.site-navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 32px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__list {
+  width: 740px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+}
+
+.navbar__item {
+  margin-right: 24px;
+}
+
+.navbar__link {
+  text-decoration: none;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  -webkit-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+
+.navbar__link:hover {
+  color: #EDC5A2;
+}
+
+.navbar__link:active {
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.icons-box {
+  width: 117px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icons-box__link {
+  margin-right: 5px;
+}
+
+.icons-box__link:hover {
+  opacity: 0.8;
+}
+
+.icons-box__link:active {
+  opacity: 0.6;
+}
+
+.icons-box__link__facebook__path {
+  -webkit-transition: fill 0.6s ease;
+  transition: fill 0.6s ease;
+  fill: white;
+}
+
+.icons-box__link__facebook__path:hover {
+  fill: #EDC5A2;
+}
+
+.icons-box__link__facebook__path:active {
+  fill: white;
+  opacity: 0.6;
+}
+
+.icons-box__link__instagram__path {
+  -webkit-transition: fill 0.6s ease;
+  transition: fill 0.6s ease;
+  fill: white;
+}
+
+.icons-box__link__instagram__path:hover {
+  fill: #EDC5A2;
+}
+
+.icons-box__link__instagram__path:active {
+  fill: white;
+  opacity: 0.6;
+}
+
+.icons-box__link__Vk {
+  width: 20px;
+  margin: 5px 0;
+  -webkit-transition: fill 0.6s ease;
+  transition: fill 0.6s ease;
+  fill: white;
+}
+
+.icons-box__link__Vk:hover {
+  fill: #EDC5A2;
+}
+
+.icons-box__link__Vk:active {
+  fill: white;
+  opacity: 0.6;
+}
+
+.icons-box__link__Vk__path {
+  -webkit-transition: fill 0.6s ease;
+  transition: fill 0.6s ease;
+  fill: white;
+}
+
+.icons-box__link__Vk__path:hover {
+  fill: #EDC5A2;
+}
+
+.icons-box__link__Vk__path:active {
+  fill: white;
+  opacity: 0.6;
+}
+
+.icons-box__link__tel {
+  -webkit-transition: fill 0.6s ease;
+  transition: fill 0.6s ease;
+  margin: 5px 0;
+  fill: white;
+}
+
+.icons-box__link__tel:hover {
+  fill: #EDC5A2;
+}
+
+.icons-box__link__tel:active {
+  fill: white;
+  opacity: 0.6;
+}
+
+.icons-box__link__tel__path {
+  -webkit-transition: fill 0.6s ease;
+  transition: fill 0.6s ease;
+  fill: white;
+}
+
+.icons-box__link__tel__path:hover {
+  fill: #EDC5A2;
+}
+
+.icons-box__link__tel__path:active {
+  fill: white;
+  opacity: 0.6;
+}
+
+.header-inner {
+  width: 961px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  padding: 13px 0;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-logo {
+  position: absolute;
+  z-index: 1;
+  top: -55px;
+  left: -480px;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+
+.site-logo:hover {
+  opacity: 0.8;
+}
+
+.site-logo:active {
+  opacity: 0.6;
+}
+
+.header-inner__number {
+  width: 338px;
+  margin-right: auto;
+  text-decoration: none;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  color: white;
+  -webkit-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+
+.header-inner__number:hover {
+  color: #EDC5A2;
+}
+
+.header-inner__number:active {
+  color: white;
+  opacity: 0.8;
+}
+
+.header-inner__box {
+  width: 100%;
+  max-width: 318px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-inner__box__link {
+  width: 100%;
+  max-width: 148.28px;
+  max-height: 46.5px;
+  border-radius: 8px;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+
+.header-inner__box__link:hover {
+  opacity: 0.8;
+}
+
+.header-inner__box__link:active {
+  opacity: 0.6;
+}
+
+.header-inner__box__link2 {
+  width: 100%;
+  max-width: 148.28px;
+  max-height: 46.5px;
+  border: 1px solid #979797;
+  border-radius: 8px;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+
+.header-inner__box__link2:hover {
+  opacity: 0.8;
+}
+
+.header-inner__box__link2:active {
+  opacity: 0.6;
+}
+
+.hero {
+  height: 981px;
+  margin: 0 auto;
+  background-image: url(../images/shadow.png), url(../images/kartinki24_ru_stpeterburg_39\.png);
+  opacity: 0.8;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-inner__top {
+  position: relative;
+}
+
+.hero-inner__top__navigation {
+  height: 30px;
+  fill: #FFFFFF;
+  position: absolute;
+  z-index: 2;
+  top: 330px;
+  left: 1320px;
+}
+
+.ellipse {
+  fill: white;
+}
+
+.ellipse:hover {
+  fill: #EDC5A2;
+}
+
+.ellipse:active {
+  fill: white;
+  opacity: 0.8;
+}
+
+.path {
+  fill: white;
+}
+
+.path:hover {
+  fill: #EDC5A2;
+}
+
+.path:active {
+  fill: white;
+  opacity: 0.8;
+}
+
+.hero-inner__top__title {
+  width: 157px;
+  margin: 0 auto;
+  padding-top: 130px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+
+.hero-inner__top__ham {
+  position: absolute;
+  z-index: 1;
+  width: 48px;
+  height: 48px;
+  top: 130px;
+  left: 1370px;
+}
+
+.hero-inner__top__span {
+  width: 1030px;
+  margin: 0 auto;
+  margin-top: 16px;
+  margin-bottom: 80px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 92px;
+  letter-spacing: 0.1em;
+  color: #EDC5A2;
+}
+
+.hero-inner__top__button {
+  width: 42px;
+  height: 42px;
+  margin-left: 25px;
+  background-color: #FFFFFF;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  border: none;
+  border-radius: 5px;
+}
+
+.hero-inner__top__button:hover {
+  background-color: #EDC5A2;
+}
+
+.hero-inner__top__button:active {
+  background-color: #fff;
+  opacity: 0.8;
+}
+
+.hero-inner__img {
+  display: block;
+  width: 1440px;
+  height: 462px;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 160px;
+}
+
+.rent {
+  background-image: url(../images/border.png);
+  background-position: calc(50% + 100px) calc(50% - 120px);
+  background-repeat: no-repeat;
+  padding-top: 20px;
+}
+
+.rent-inner {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+.rent-inner__title {
+  margin-top: 140px;
+  margin-bottom: 8px;
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29px;
+  vertical-align: top;
+  color: white;
+}
+
+.rnet-inner__span {
+  padding-bottom: 500px;
+  font-family: "Gilroy";
+  font-weight: 900;
+  font-style: heavy;
+  font-size: 48px;
+  line-height: 100%;
+  vertical-align: top;
+  letter-spacing: 10%;
+  color: #EDC5A2;
+}
+
+.rent-inner__img {
+  width: 660px;
+  height: 378.2px;
+}
+
+.rent-inner_img-box {
+  width: 1990px;
+  position: absolute;
+  z-index: 1;
+  top: 140px;
+  left: -275px;
+}
+
+.rent-inner__img-box__span {
+  width: 222px;
+  height: 48px;
+  position: absolute;
+  top: 300px;
+  left: 220px;
+  z-index: 2;
+  padding: 14px 32px;
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  border: 3px solid white;
+  border-radius: 5px;
+  text-decoration: none;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.rent-inner__img-box__span:hover {
+  color: #EDC5A2;
+  border: 3px solid #EDC5A2;
+  opacity: 0.8;
+}
+
+.rent-inner__img-box__span:active {
+  color: white;
+  border: 3px solid white;
+  opacity: 0.8;
+}
+
+.rent-inner__img-box__span1 {
+  width: 255px;
+  height: 48px;
+  position: absolute;
+  top: 300px;
+  left: 880px;
+  z-index: 2;
+  padding: 14px 32px;
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  border: 3px solid white;
+  border-radius: 5px;
+  text-decoration: none;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.rent-inner__img-box__span1:hover {
+  color: #EDC5A2;
+  border: 3px solid #EDC5A2;
+  opacity: 0.8;
+}
+
+.rent-inner__img-box__span1:active {
+  color: white;
+  border: 3px solid white;
+  opacity: 0.8;
+}
+
+.rent-inner__img-box__span2 {
+  width: 222px;
+  height: 48px;
+  position: absolute;
+  top: 300px;
+  left: 1540px;
+  z-index: 2;
+  padding: 14px 32px;
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  border: 3px solid white;
+  border-radius: 5px;
+  text-decoration: none;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.rent-inner__img-box__span2:hover {
+  color: #EDC5A2;
+  border: 3px solid #EDC5A2;
+  opacity: 0.8;
+}
+
+.rent-inner__img-box__span2:active {
+  color: white;
+  border: 3px solid white;
+  opacity: 0.8;
+}
+
+.park {
+  background-image: url(../images/border.png);
+  background-position: calc(50% + 60px) calc(50% + 95px);
+  background-repeat: no-repeat;
+  padding-top: 60px;
+}
+
+.park-inner {
+  position: relative;
+}
+
+.park-inner__title {
+  margin-top: 500px;
+  text-align: center;
+  font-family: "Gilroy";
+  font-weight: 900;
+  font-style: heavy;
+  font-size: 48px;
+  line-height: 100%;
+  vertical-align: top;
+  letter-spacing: 10%;
+  color: #EDC5A2;
+}
+
+.titles__box {
+  width: 386px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.titles__box__title {
+  text-decoration: none;
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29px;
+  vertical-align: top;
+  color: white;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.titles__box__title:hover {
+  color: #EDC5A2;
+}
+
+.titles__box__title:active {
+  color: white;
+  opacity: 0.8;
+}
+
+.titles__box__title--with-border {
+  margin: 0 24px;
+  padding: 0 26px;
+  text-decoration: none;
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29px;
+  vertical-align: top;
+  color: white;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.titles__box__title--with-border:hover {
+  color: #EDC5A2;
+}
+
+.titles__box__title--with-border:active {
+  color: white;
+  opacity: 0.8;
+}
+
+.park-inner__img {
+  width: 660px;
+  height: 378.2px;
+}
+
+.park-inner__img-box {
+  width: 1990px;
+  position: absolute;
+  z-index: 1;
+  top: 190px;
+  left: -275px;
+}
+
+.park-inner__img-box__span {
+  width: 244px;
+  height: 48px;
+  position: absolute;
+  top: 300px;
+  left: 206px;
+  z-index: 2;
+  padding: 14px 32px;
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  border: 3px solid white;
+  border-radius: 5px;
+  text-decoration: none;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.park-inner__img-box__span:hover {
+  color: #EDC5A2;
+  border: 3px solid #EDC5A2;
+  opacity: 0.8;
+}
+
+.park-inner__img-box__span:active {
+  color: white;
+  border: 3px solid white;
+  opacity: 0.8;
+}
+
+.park-inner__img-box__span1 {
+  width: 244px;
+  height: 48px;
+  position: absolute;
+  top: 300px;
+  left: 870px;
+  z-index: 2;
+  padding: 14px 32px;
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  border: 3px solid white;
+  border-radius: 5px;
+  text-decoration: none;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.park-inner__img-box__span1:hover {
+  color: #EDC5A2;
+  border: 3px solid #EDC5A2;
+  opacity: 0.8;
+}
+
+.park-inner__img-box__span1:active {
+  color: white;
+  border: 3px solid white;
+  opacity: 0.8;
+}
+
+.park-inner__img-box__span2 {
+  width: 244px;
+  height: 48px;
+  position: absolute;
+  top: 300px;
+  left: 1550px;
+  z-index: 2;
+  padding: 14px 32px;
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  border: 3px solid white;
+  border-radius: 5px;
+  text-decoration: none;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.park-inner__img-box__span2:hover {
+  color: #EDC5A2;
+  border: 3px solid #EDC5A2;
+  opacity: 0.8;
+}
+
+.park-inner__img-box__span2:active {
+  color: white;
+  border: 3px solid white;
+  opacity: 0.8;
+}
+
+.coditions-inner {
+  height: 800px;
+  text-align: center;
+}
+
+.conditions-inner__title {
+  margin-top: 600px;
+  color: white;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.conditions-inner__title__span {
+  font-family: "Gilroy";
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 60px;
+  color: #EDC5A2;
+}
+/*# sourceMappingURL=main.css.map */
