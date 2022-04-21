@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"name": "galeoncar",
+			"path": "."
+		},
+		{
+			"name": "slick",
+			"path": "..\\qo`shimcha carousel-2\\slick"
+		}
+	],
+	"settings": {
+		"liveSassCompile.settings.formats": [
+			{
+				"format": "expanded",
+				"extensionName": ".css",
+				"savePath": "/css"
+			}
+		],
+		"liveServer.settings.port": 5501
+	}
+}

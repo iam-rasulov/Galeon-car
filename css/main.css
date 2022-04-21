@@ -505,14 +505,6 @@ p {
   margin-right: 5px;
 }
 
-.icons-box__link:hover {
-  opacity: 0.8;
-}
-
-.icons-box__link:active {
-  opacity: 0.6;
-}
-
 .icons-box__link__facebook__path {
   -webkit-transition: fill 0.6s ease;
   transition: fill 0.6s ease;
@@ -1152,13 +1144,25 @@ p {
   opacity: 0.8;
 }
 
-.coditions-inner {
-  height: 800px;
+.conditions {
+  margin-top: 400px;
+  margin-bottom: 200px;
+  background-image: url(../images/conditions-bg-shadow.png), url(../images/conditions-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8;
+  background-position: center;
+  background-size: cover;
+}
+
+.conditions-inner {
   text-align: center;
+  margin-top: 500px;
+  padding-top: 5px;
 }
 
 .conditions-inner__title {
-  margin-top: 600px;
+  margin-top: 150px;
   color: white;
   font-family: "Gilroy";
   font-style: normal;
@@ -1172,5 +1176,265 @@ p {
   font-size: 48px;
   line-height: 60px;
   color: #EDC5A2;
+}
+
+.conditions-inner__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.conditions-inner__box__list {
+  width: 100%;
+  max-width: 870px;
+  margin: 0;
+  margin-top: 50px;
+  padding: 0;
+  text-align: start;
+  list-style-type: none;
+}
+
+.conditions-inner__box__item {
+  padding: 10px 0;
+  font-family: "Gilroy";
+  border-bottom: 1px solid rgba(255, 255, 255, 0.288);
+  color: white;
+  position: relative;
+}
+
+.conditions-inner__box__item__btn {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-color: transparent;
+  background-image: url(../images/list-strelkasi.svg);
+  background-repeat: no-repeat;
+  border: none;
+  top: 15px;
+  right: 0;
+}
+
+.conditions-inner__box__item__btn2 {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-color: transparent;
+  background-image: url(../images/list-strelkasi.svg);
+  background-repeat: no-repeat;
+  border: none;
+  top: 15px;
+  right: 0;
+}
+
+.conditions-inner__box__item__btn3 {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-color: transparent;
+  background-image: url(../images/list-strelkasi.svg);
+  background-repeat: no-repeat;
+  border: none;
+  top: 15px;
+  right: 0;
+}
+
+.conditions-inner__box__item__btn4 {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-color: transparent;
+  background-image: url(../images/list-strelkasi.svg);
+  background-repeat: no-repeat;
+  border: none;
+  top: 15px;
+  right: 0;
+}
+
+.conditions-inner__box__item__btn5 {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-color: transparent;
+  background-image: url(../images/list-strelkasi.svg);
+  background-repeat: no-repeat;
+  border: none;
+  top: 15px;
+  right: 0;
+}
+
+.btn-up {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-color: transparent;
+  background-image: url(../images/Shape.svg);
+  background-repeat: no-repeat;
+  border: none;
+  top: 15px;
+  right: 0;
+}
+
+.conditions-inner__box__item__list {
+  display: none;
+  margin: 10px;
+  padding: 0;
+  list-style-type: none;
+  color: white;
+  opacity: 0.6;
+}
+
+.conditions-inner__box__item__list2 {
+  display: none;
+  margin: 10px;
+  padding: 0;
+  list-style-type: none;
+  color: white;
+  opacity: 0.6;
+}
+
+.conditions-inner__box__item__list3 {
+  display: none;
+  margin: 10px;
+  padding: 0;
+  list-style-type: none;
+  color: white;
+  opacity: 0.6;
+}
+
+.conditions-inner__box__item__list4 {
+  display: none;
+  margin: 10px;
+  padding: 0;
+  list-style-type: none;
+  color: white;
+  opacity: 0.6;
+}
+
+.conditions-inner__box__item__list5 {
+  display: none;
+  margin: 10px;
+  padding: 0;
+  list-style-type: none;
+  color: white;
+  opacity: 0.6;
+}
+
+.d-block {
+  display: block;
+}
+
+.conditions-inner__box__item__item {
+  margin-bottom: 10px;
+}
+
+.conditions-inner__box__item__item__- {
+  margin-right: 5px;
+  margin-bottom: 3.5px;
+}
+
+.conditions-inner__box__list2 {
+  width: 100%;
+  max-width: 415px;
+  margin: 0;
+  margin-top: 80px;
+  margin-bottom: 200px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 90px;
+  background-color: rgba(0, 0, 0, 0.25);
+  border: 1px solid transparent;
+  list-style-type: none;
+}
+
+.conditions-inner__box__item2 {
+  margin-bottom: 15px;
+  font-family: "Gilroy";
+  text-align: start;
+  color: white;
+  position: relative;
+}
+
+.conditions-inner__box__item2::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  z-index: 3;
+  background-image: url(../images/calendar.svg);
+  background-repeat: no-repeat;
+  top: 0;
+  left: -30px;
+}
+
+.conditions-inner__box__item2:nth-child(2)::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  z-index: 3;
+  background-image: url(../images/user-list.svg);
+  background-repeat: no-repeat;
+  top: 0;
+  left: -30px;
+}
+
+.conditions-inner__box__item2:nth-child(3)::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  z-index: 3;
+  background-image: url(../images/ClockCircle.svg);
+  background-repeat: no-repeat;
+  top: 0;
+  left: -30px;
+}
+
+.conditions-inner__box__item2:nth-child(4)::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  z-index: 3;
+  background-image: url(../images/Clock.svg);
+  background-repeat: no-repeat;
+  top: 0;
+  left: -30px;
+}
+
+.conditions-inner__box__item2:nth-child(5)::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  z-index: 3;
+  background-image: url(../images/Card1.svg);
+  background-repeat: no-repeat;
+  top: 0;
+  left: -30px;
+}
+
+.conditions-inner__box__item2:nth-child(6) {
+  margin-bottom: 0;
+}
+
+.conditions-inner__box__item2:nth-child(6)::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  z-index: 3;
+  background-image: url(../images/Handshake.svg);
+  background-repeat: no-repeat;
+  top: 0;
+  left: -30px;
+}
+
+.conditions-inner__box__item__title {
+  margin: 0 0 10px 0;
 }
 /*# sourceMappingURL=main.css.map */
